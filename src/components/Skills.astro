@@ -1,0 +1,38 @@
+---
+const skills = [
+  { name: "VMware ESXi", level: "Avanzado" },
+  { name: "Linux", level: "Avanzado" },
+  { name: "Windows Server", level: "Avanzado" },
+  { name: "Synology NAS", level: "Avanzado" },
+  { name: "Docker", level: "Intermedio" },
+  { name: "Redes", level: "Avanzado" },
+  { name: "Cloud", level: "Intermedio" },
+  { name: "PowerShell", level: "Intermedio" }
+];
+---
+
+<section id="skills" class="skills">
+
+  <h2>Tecnologías</h2>
+
+  <p class="subtitle">
+    Tecnologías con las que trabajo habitualmente.
+  </p>
+
+  <div class="skills-grid">
+
+    {skills.map(skill => (
+
+      <div class="skill-card">
+
+        <h3>{skill.name}</h3>
+
+        <span>{skill.level}</span>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</section>

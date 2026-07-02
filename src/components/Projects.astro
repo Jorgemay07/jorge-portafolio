@@ -1,0 +1,21 @@
+---
+import { projects } from "../data/projects";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section id="projects" class="projects">
+
+  <div class="section-header">
+    <span class="section-title">PROYECTOS</span>
+    <h2>Proyectos destacados</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    {projects.map((project) => (
+  <ProjectCard project={project} />
+))}
+
+  </div>
+
+</section>

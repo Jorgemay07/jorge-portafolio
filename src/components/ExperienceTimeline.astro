@@ -1,0 +1,69 @@
+---
+import { experience } from "../data/experience";
+---
+
+<section class="experience">
+
+    <div class="section-header">
+
+    <span class="section-title">
+        EXPERIENCIA
+    </span>
+
+    <h2>Mi trayectoria profesional</h2>
+
+    <p>
+        Más de 11 años participando en proyectos de infraestructura,
+        virtualización, administración de servidores y soporte a servicios
+        críticos.
+    </p>
+
+</div>
+
+    {
+        experience.map(job => (
+
+           <article class="timeline-card">
+
+    <div class="timeline-header">
+
+        <div class="timeline-icon">
+            💼
+        </div>
+
+        <div>
+
+            <span class="timeline-period">
+                {job.period}
+            </span>
+
+            <h3>{job.position}</h3>
+
+            <h4>🏢 {job.company}</h4>
+
+           <small>📍 {job.location}</small>
+
+        </div>
+
+    </div>
+
+    <p>{job.description}</p>
+
+    <div class="tech-list">
+
+        {
+            job.technologies.map(tech => (
+
+                <span>{tech}</span>
+
+            ))
+        }
+
+    </div>
+
+</article>
+
+        ))
+    }
+
+</section>

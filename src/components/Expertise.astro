@@ -1,0 +1,79 @@
+---
+import {
+  Server,
+  HardDrive,
+  Network,
+  MonitorCog,
+  Container,
+  Database
+} from "lucide-astro";
+
+const skills = [
+  {
+    icon: Server,
+    title: "Virtualización",
+    description: "VMware ESXi • vCenter"
+  },
+  {
+    icon: MonitorCog,
+    title: "Windows Server",
+    description: "Active Directory • DNS • DHCP"
+  },
+  {
+    icon: Database,
+    title: "Linux",
+    description: "Ubuntu Server • Debian"
+  },
+  {
+    icon: HardDrive,
+    title: "Storage",
+    description: "Synology DSM"
+  },
+  {
+    icon: Network,
+    title: "Networking",
+    description: "VLAN • VPN • Switching"
+  },
+  {
+    icon: Container,
+    title: "Containers",
+    description: "Docker"
+  }
+];
+---
+
+<section class="expertise" id="expertise">
+
+    <h2>Infrastructure Expertise</h2>
+
+    <p>
+        Tecnologías y plataformas con las que trabajo diariamente.
+    </p>
+
+    <div class="expertise-grid">
+
+        {
+            skills.map((skill)=>{
+
+                const Icon = skill.icon;
+
+                return(
+
+                    <article class="expertise-card">
+
+                        <Icon class="expertise-icon"/>
+
+                        <h3>{skill.title}</h3>
+
+                        <p>{skill.description}</p>
+
+                    </article>
+
+                )
+
+            })
+        }
+
+    </div>
+
+</section>

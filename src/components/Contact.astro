@@ -1,0 +1,67 @@
+---
+import { profile } from "../data/profile";
+---
+
+<section id="contact" class="contact">
+
+  <div class="section-header">
+    <span class="section-title">CONTACTO</span>
+    <h2>Hablemos</h2>
+
+    <p>
+      ¿Buscas un Ingeniero de Infraestructura o quieres ponerte en contacto
+      conmigo? Estaré encantado de conversar.
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+
+      <h3>📧 Correo</h3>
+
+      <a href={`mailto:${profile.email}`}>
+        {profile.email}
+      </a>
+
+    </div>
+
+    <div class="contact-card">
+
+      <h3>📍 Ubicación</h3>
+
+      <p>{profile.location}</p>
+
+    </div>
+
+    <div class="contact-card">
+
+      <h3>💼 LinkedIn</h3>
+
+      <a
+        href="https://linkedin.com/in/TU-USUARIO"
+        target="_blank">
+
+        Ver perfil
+
+      </a>
+
+    </div>
+
+    <div class="contact-card">
+
+      <h3>💻 GitHub</h3>
+
+      <a
+        href="https://github.com/TU-USUARIO"
+        target="_blank">
+
+        Ver repositorios
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
