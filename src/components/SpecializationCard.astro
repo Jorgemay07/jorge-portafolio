@@ -1,0 +1,56 @@
+---
+import { Server, HardDrive, Activity } from "lucide-astro";
+
+interface Props {
+  project: {
+    title: string;
+    category: string;
+    status: string;
+    year: string;
+    icon: string;
+    description: string;
+    technologies: string[];
+  };
+}
+
+const { project } = Astro.props;
+
+const icons = {
+  server: Server,
+  harddrive: HardDrive,
+  activity: Activity,
+};
+
+const Icon = icons[project.icon as keyof typeof icons] ?? Server;
+---
+
+<article class="project-card">
+
+  <div class="project-icon">
+  <Icon size={34} />
+</div>
+
+  <div class="project-meta">
+    <span>{project.category}</span>
+    <span>{project.year}</span>
+  </div>
+
+  <h3>{project.title}</h3>
+
+  <span class="project-status">
+    {project.status}
+  </span>
+
+  <p>{project.description}</p>
+
+  <div class="tags">
+    {project.technologies.map((tech) => (
+      <span>{tech}</span>
+    ))}
+  </div>
+
+  <a href="#" class="project-link">
+  Explorar especialidad →
+</a>
+
+</article>

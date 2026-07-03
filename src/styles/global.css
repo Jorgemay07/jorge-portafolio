@@ -929,28 +929,122 @@ display:flex;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:25px;
 }
+.project-meta{
 
-.project-card{
+    display:flex;
 
-    background:#0f172a;
+    justify-content:space-between;
 
-    border:1px solid rgba(255,255,255,.08);
+    align-items:center;
 
-    border-radius:18px;
+    font-size:.85rem;
 
-    padding:30px;
+    color:#94a3b8;
 
-    transition:.3s;
+    margin:10px 0;
 
 }
 
+.project-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:rgba(34,197,94,.12);
+
+    color:#22c55e;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    margin:18px 0;
+
+}
+.project-card{
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.03),
+        rgba(255,255,255,.015)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:all .35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(59,130,246,.08),
+        transparent 45%
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+.project-card:hover::before{
+
+    opacity:1;
+
+}
+.project-icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#13264d;
+
+    color:#3b82f6;
+
+    margin-bottom:25px;
+
+    box-shadow:
+        0 0 30px rgba(59,130,246,.15);
+
+}
 .project-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-12px);
 
-    border-color:#2563eb;
+    border-color:#3b82f6;
 
-    box-shadow:0 15px 40px rgba(37,99,235,.15);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45);
 
 }
 
@@ -986,16 +1080,26 @@ display:flex;
 
     background:#1e293b;
 
+    border:1px solid rgba(255,255,255,.06);
+
     color:#60a5fa;
 
-    padding:6px 14px;
+    padding:8px 14px;
 
     border-radius:999px;
 
-    font-size:.85rem;
+    font-size:.82rem;
+
+    transition:.25s;
 
 }
+.tags span:hover{
 
+    background:#2563eb;
+
+    color:white;
+
+}
 /*==========================
  CONTACT
 ==========================*/
