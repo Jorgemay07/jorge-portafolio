@@ -1222,6 +1222,9 @@ display:flex;
 /*==========================
  FOOTER
 ==========================*/
+/*==============================
+FOOTER
+==============================*/
 
 .footer{
 
@@ -1235,7 +1238,7 @@ display:flex;
 
 .footer-content{
 
-    width:min(1200px,90%);
+    width:min(1100px,90%);
 
     margin:auto;
 
@@ -1243,9 +1246,11 @@ display:flex;
 
 }
 
-.footer h3{
+.footer h2{
 
-    color:white;
+    color:#3b82f6;
+
+    font-size:2rem;
 
     margin-bottom:15px;
 
@@ -1253,15 +1258,47 @@ display:flex;
 
 .footer p{
 
-    color:var(--gray);
+    color:#94a3b8;
 
-    margin-bottom:20px;
+    margin-bottom:30px;
 
 }
 
-.footer small{
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.footer-links a{
+
+    color:#e2e8f0;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#3b82f6;
+
+}
+
+.footer span{
 
     color:#64748b;
+
+    font-size:.9rem;
 
 }
 
@@ -1957,6 +1994,19 @@ display:flex;
   }
 
 
+.footer{
+
+    padding:50px 20px;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
   /*======================================
  Responsive Expertise
 ======================================*/
