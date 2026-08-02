@@ -335,7 +335,7 @@ export const projects = [
 
     year: "2023 - Actualidad",
 
-    icon: "cloud ",
+    icon: "cloud",
 
     description:
       "Configuración y administración de servidores en la nube para garantizar disponibilidad, escalabilidad y seguridad de los servicios institucionales.",
