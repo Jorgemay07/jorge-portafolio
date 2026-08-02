@@ -1,5 +1,5 @@
 ---
-import { Server, HardDrive, Activity } from "lucide-astro";
+import { Server, HardDrive, Activity, Shield, Mail, Terminal, Cloud, MonitorCheck, MonitorCog } from "lucide-astro";
 
 interface Props {
   project: {
@@ -19,7 +19,13 @@ const icons = {
   server: Server,
   harddrive: HardDrive,
   activity: Activity,
-};
+  shield: Shield,
+  mail: Mail,
+  terminal:Terminal,
+     cloud: Cloud,
+  monitorcheck: MonitorCheck,
+  monitorcog: MonitorCog
+};  
 
 const Icon = icons[project.icon as keyof typeof icons] ?? Server;
 ---
@@ -49,8 +55,6 @@ const Icon = icons[project.icon as keyof typeof icons] ?? Server;
     ))}
   </div>
 
-  <a href="#" class="project-link">
-  Explorar especialidad →
-</a>
+ 
 
 </article>

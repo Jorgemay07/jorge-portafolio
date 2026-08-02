@@ -13,7 +13,7 @@ export const projects = [
     icon: "server",
 
     description:
-      "Administración de plataformas VMware ESXi y vCenter para garantizar disponibilidad, rendimiento y continuidad de los servicios.",
+      "Administración de servidores virtuales en la plataforma VMware ESXi para garantizar disponibilidad, rendimiento y continuidad de los servicios.",
 
     overview:
       "Experiencia administrando plataformas de virtualización empresariales, optimizando recursos y asegurando la continuidad operativa de servicios críticos.",
@@ -103,6 +103,85 @@ export const projects = [
     technologies: [
       "Zabbix",
       "Linux",
+      "Networking"
+    ],
+
+    responsibilities: [
+      "Configuración de hosts.",
+      "Alertas.",
+      "Dashboards.",
+      "Monitoreo de servicios.",
+      "Análisis de disponibilidad."
+    ],
+
+    results: [
+      "Respuesta más rápida a incidentes.",
+      "Visibilidad completa de la infraestructura.",
+      "Monitoreo 24/7."
+    ]
+  },
+
+  {
+    slug: "Correos Institucionales",
+
+    title: "Correos Institucionales",
+
+    category: "Comunicación",
+
+    status: "Producción",
+
+    year: "2019 - Actualidad",
+
+    icon: "mail",
+
+    description:
+      "Administración de cuentas de correo electrónico institucionales mediante Google Workspace y Microsoft Exchange para garantizar comunicación efectiva y segura.",
+
+    overview:
+      "Implementación y administración de soluciones de correo electrónico para la comunicación interna y externa de la institución.",
+    technologies: [
+      "Google Workspace",
+      "Microsoft Exchange",
+      "Windows Server",
+      "Networking"
+    ],
+
+    responsibilities: [
+      "Configuración de hosts.",
+      "Alertas.",
+      "Dashboards.",
+      "Monitoreo de servicios.",
+      "Análisis de disponibilidad."
+    ],
+
+    results: [
+      "Respuesta más rápida a incidentes.",
+      "Visibilidad completa de la infraestructura.",
+      "Monitoreo 24/7."
+    ]
+  },
+    {
+    slug: "SAACG.NET",
+
+    title: "Sistema Financiero Gubernamental",
+
+    category: "Financiero",
+
+    status: "Producción",
+
+    year: "2020 - Actualidad",
+
+    icon: "monitorcog",
+
+    description:
+      "Administración y soporte del sistema financiero SAACG.NET para la gestión de recursos y procesos administrativos en el Colegio de Bachilleres del Estado de Yucatán.",
+
+    overview:
+      "Implementación y administración del sistema financiero SAACG.NET para la gestión de recursos y procesos administrativos en el Colegio de Bachilleres del Estado de Yucatán.",
+
+    technologies: [
+      "MySQL",
+      "Windows Server",
       "Networking"
     ],
 
