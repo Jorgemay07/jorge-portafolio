@@ -1,5 +1,5 @@
 ---
-import { Server, HardDrive, Activity, Shield, Mail, Terminal, Cloud, MonitorCheck, MonitorCog } from "lucide-astro";
+import { Server, HardDrive, Activity, Shield, Mail, Terminal, Cloud, MonitorCheck, MonitorCog, Network, Waypoints, Cctv } from "lucide-astro";
 
 interface Props {
   project: {
@@ -24,7 +24,10 @@ const icons = {
   terminal:Terminal,
      cloud: Cloud,
   monitorcheck: MonitorCheck,
-  monitorcog: MonitorCog
+  monitorcog: MonitorCog,
+  network: Network,
+  waypoints: Waypoints,
+  cctv: Cctv
 };  
 
 const Icon = icons[project.icon as keyof typeof icons] ?? Server;
