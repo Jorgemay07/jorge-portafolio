@@ -347,7 +347,7 @@ export const projects = [
         "google cloud",
         "linux",
         "windows server",
-        "versel",
+        "vercel",
          ],
     responsibilities: [
       "Configuración de hosts.",
