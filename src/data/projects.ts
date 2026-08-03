@@ -13,7 +13,7 @@ export const projects = [
     icon: "server",
 
     description:
-      "Administración de servidores virtuales en la plataforma VMware ESXi para garantizar disponibilidad, rendimiento y continuidad de los servicios.",
+      "Administración de servidores Windows Server y Linux virtuales en la plataforma VMware ESXi para garantizar disponibilidad, rendimiento y continuidad de los servicios.",
 
     overview:
       "Experiencia administrando plataformas de virtualización empresariales, optimizando recursos y asegurando la continuidad operativa de servicios críticos.",
