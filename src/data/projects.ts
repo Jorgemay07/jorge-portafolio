@@ -375,12 +375,12 @@ export const projects = [
 
     year: "2023 - Actualidad",
 
-    icon: "Warehouse",
+    icon: "terminal",
 
     description:
-      "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
+      "Deployment y despliegue de Sistemas y aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
     overview:
-      "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
+      "Deployment y despliegue de sistemas y aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
     technologies: [
         "aws",
         "azure",
