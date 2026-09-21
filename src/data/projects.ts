@@ -375,7 +375,7 @@ export const projects = [
 
     year: "2023 - Actualidad",
 
-    icon: "Globe",
+    icon: "Warehouse",
 
     description:
       "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
