@@ -363,6 +363,45 @@ export const projects = [
       "Monitoreo 24/7."
     ]
   },
+  {
+    slug: "Deployment de Aplicaciones",
+
+    title: "Deployment de Aplicaciones",
+
+    category: "Infraestructura",
+
+    status: "Producción",
+
+    year: "2023 - Actualidad",
+
+    icon: "CircleDashedCheck",
+
+    description:
+      "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
+    overview:
+      "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
+    technologies: [
+        "aws",
+        "azure",
+        "cpanel",
+        "GoDaddy",
+        "Linux",
+        "vercel",
+         ],
+    responsibilities: [
+      "Configuración de ambiente de producción.",
+      "Despliegue de aplicaciones.",
+      "Configuración de certificados SSL.",
+      "Configuración de DNS.",
+      "Configuración de acceso remoto y control."
+    ],
+
+    results: [
+      "Servicios disponibles 24/7.",
+      "Visibilidad completa de la infraestructura.",
+      "Monitoreo 24/7."
+    ]
+  },
    {
     slug: "Camaras de Seguridad",
 
