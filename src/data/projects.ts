@@ -363,6 +363,7 @@ export const projects = [
       "Monitoreo 24/7."
     ]
   },
+  
   {
     slug: "Deployment de Aplicaciones",
 
@@ -374,7 +375,7 @@ export const projects = [
 
     year: "2023 - Actualidad",
 
-    icon: "CircleDashedCheck",
+    icon: "GlobeCode",
 
     description:
       "Deployment y despliegue de aplicaciones en entornos de producción, configuración de certificados SSL, DNS y todo lo relacionado.",
@@ -402,6 +403,7 @@ export const projects = [
       "Monitoreo 24/7."
     ]
   },
+
    {
     slug: "Camaras de Seguridad",
 
